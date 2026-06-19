@@ -5,6 +5,7 @@ export function slugifyProduceName(name) {
     .replace(/\s+/g, "-")
     .replace(/[()]/g, "");
 }
+
 export function getProduceImageByName(name) {
-  return `/assets/${slugifyProduceName(name)}.svg`;
+  return `${import.meta.env.BASE_URL}assets/${slugifyProduceName(name)}.svg`;
 }
