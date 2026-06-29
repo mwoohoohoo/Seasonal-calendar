@@ -9,6 +9,7 @@ import { Button } from "./components//ui/button";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Languages } from "lucide-react";
 import { ChartNoAxesGantt, CircleDot } from "lucide-react";
+import logo from "./assets/seasons-eatings-logo.svg";
 
 export default function Sidebar({
   MONTHS,
@@ -65,7 +66,12 @@ fixed
       {/* HEADER */}
 
       <div className="space-y-4">
-        <h1 className="leading-none font-semibold">{t.title}</h1>
+        {/* LOGO*/}
+        <img
+          src={logo}
+          alt="Season's eatings'"
+          className="h-4 sm:h-6 md:h-8 lg:h-10 w-auto"
+        />
 
         <p className="text-sm text-muted-foreground leading-relaxed">
           {t.description}

@@ -9,3 +9,4 @@ export function slugifyProduceName(name) {
 export function getProduceImageByName(name) {
   return `${import.meta.env.BASE_URL}assets/${slugifyProduceName(name)}.svg`;
 }
+
