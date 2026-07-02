@@ -80,7 +80,7 @@ export default function Navbar({
           <img
             src={logo}
             alt="Season's eatings'"
-            className="h-4 sm:h-6 md:h-8 lg:h-10 w-auto"
+            className="h-5 sm:h-6 md:h-8 lg:h-10 w-auto"
           />
 
           <div className="flex md:gap-10">
